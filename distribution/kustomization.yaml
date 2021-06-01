@@ -13,9 +13,9 @@ resources:
   - argocd-applications/cert-manager-dns-01.yaml
 
   # Pick *one* of the following applications:  
-  - argocd-applications/oidc-auth-on-cluster-dex.yaml
+  # - argocd-applications/oidc-auth-on-cluster-dex.yaml
   # - argocd-applications/oidc-auth-on-cluster-keycloak.yaml
-  # - argocd-applications/oidc-auth-external.yaml
+  - argocd-applications/oidc-auth-external.yaml
 
 
   ## Kubeflow  
@@ -48,7 +48,7 @@ resources:
   - argocd-applications/aws-load-balancer-controller.yaml
   - argocd-applications/external-dns.yaml
   - argocd-applications/external-secrets.yaml
-  - argocd-applications/sealed-secrets.yaml
+  # - argocd-applications/sealed-secrets.yaml
 
   ## Contrib
   # - argocd-applications/mlflow.yaml
