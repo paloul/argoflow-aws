@@ -43,7 +43,7 @@ resources:
   - argocd-applications/xgboost-operator.yaml
 
   ## System
-  # - argocd-applications/aws-node-termination-handler.yaml
+  - argocd-applications/aws-node-termination-handler.yaml
   - argocd-applications/cluster-autoscaler.yaml
   - argocd-applications/aws-load-balancer-controller.yaml
   - argocd-applications/external-dns.yaml

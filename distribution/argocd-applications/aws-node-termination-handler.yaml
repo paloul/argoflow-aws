@@ -6,8 +6,10 @@ metadata:
 spec:
   project: default
   source:
+    # Link to helm chart 
+    # https://artifacthub.io/packages/helm/aws/aws-node-termination-handler
     repoURL: https://aws.github.io/eks-charts
-    targetRevision: 0.15.0
+    targetRevision: 0.15.0 # Chart v0.15.0 uses v1.13.0 of the node-termination-handler
     chart: aws-node-termination-handler
     helm:
      parameters:
