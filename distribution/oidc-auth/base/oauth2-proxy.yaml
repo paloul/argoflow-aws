@@ -63,6 +63,8 @@ spec:
       #   value: openid
       # - name: extraArgs.skip-oidc-discovery
       #   value: "true"
+      - name: extraArgs.insecure-oidc-allow-unverified-email
+        value: "true"
     repoURL: https://oauth2-proxy.github.io/manifests
     targetRevision: 3.2.11
   destination:
