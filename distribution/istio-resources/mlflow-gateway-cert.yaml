@@ -1,13 +1,13 @@
 apiVersion: cert-manager.io/v1
 kind: Certificate
 metadata:
-  name: kubeflow-ingressgateway-certs
+  name: mlflow-ingressgateway-certs
   namespace: istio-system
 spec:
-  secretName: kubeflow-ingressgateway-certs
+  secretName: mlflow-ingressgateway-certs
   issuerRef:
     name: gateways-issuer
     kind: ClusterIssuer
-  commonName: <<__subdomain_dashboard__>>.<<__domain__>>
+  commonName: <<__subdomain_mlflow__>>.<<__domain__>>
   dnsNames:
-    - <<__subdomain_dashboard__>>.<<__domain__>>
+    - <<__subdomain_mlflow__>>.<<__domain__>>
