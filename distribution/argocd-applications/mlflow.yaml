@@ -4,14 +4,16 @@ metadata:
   name: mlflow
   namespace: argocd
 spec:
-  destination:
-    namespace: mlflow
-    server: https://kubernetes.default.svc
   project: default
   source:
     repoURL: <<__git_repo.url__>>
     targetRevision: <<__git_repo.target_revision__>>
     path: distribution/mlflow
+    kustomize:
+      version: v4.0.5
+  destination:
+    namespace: mlflow
+    server: https://kubernetes.default.svc
   syncPolicy:
     automated:
       prune: true

@@ -51,6 +51,6 @@ resources:
   # - argocd-applications/sealed-secrets.yaml
 
   ## Contrib
-  # - argocd-applications/mlflow.yaml
+  - argocd-applications/mlflow.yaml
   - argocd-applications/experimental-pvcviewer-controller.yaml
   - argocd-applications/experimental-volumes-web-app.yaml
