@@ -66,7 +66,7 @@ spec:
       - name: extraArgs.insecure-oidc-allow-unverified-email
         value: "true"
     repoURL: https://oauth2-proxy.github.io/manifests
-    targetRevision: 3.2.11
+    targetRevision: 3.3.2
   destination:
     namespace: auth
     server: https://kubernetes.default.svc
