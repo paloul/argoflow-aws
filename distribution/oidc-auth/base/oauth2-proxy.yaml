@@ -65,6 +65,10 @@ spec:
       #   value: "true"
       - name: extraArgs.insecure-oidc-allow-unverified-email
         value: "true"
+      - name: extraArgs.session-store-type
+        value: "redis"
+      - name: extraArgs.redis-connection-url
+        value: <<__oidc.redis.connection_url__>>
     repoURL: https://oauth2-proxy.github.io/manifests
     targetRevision: 3.3.2
   destination:
