@@ -2,6 +2,7 @@
 # https://github.com/kubernetes-sigs/aws-fsx-csi-driver
 # https://www.kubeflow.org/docs/distributions/aws/customizing-aws/storage/#amazon-fsx-for-lustre
 # https://github.com/kubeflow/manifests/tree/master/distributions/aws/aws-fsx-csi-driver/base
+# https://github.com/kubernetes-sigs/aws-fsx-csi-driver/tree/master/examples/kubernetes/dynamic_provisioning
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
