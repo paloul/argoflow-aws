@@ -8,7 +8,7 @@ parameters:
   securityGroupIds: <<__fsx_lustre.security_group_id__>>
   deploymentType: <<__fsx_lustre.deployment_type__>>
   storageType: <<__fsx_lustre.storage_type__>>
-  perUnitStorageThroughput: <<__fsx_lustre.storage_throughput__>>
+  perUnitStorageThroughput: "<<__fsx_lustre.storage_throughput__>>"
   driveCacheType: <<__fsx_lustre.drive_cache_type__>>
   automaticBackupRetentionDays: "1"
   dailyAutomaticBackupStartTime: "00:00"
