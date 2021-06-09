@@ -8,6 +8,8 @@ resources:
 - csi-node-daemonset.yaml
 - csi-provisioner-cluster-role.yaml
 - csi-provisioner-cluster-role-binding.yaml
+- fsx-claim.yaml
+- fsx-storage-class.yaml
 generatorOptions:
   disableNameSuffixHash: true
 images:
