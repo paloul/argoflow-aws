@@ -9,7 +9,7 @@ resources:
 - csi-provisioner-cluster-role.yaml
 - csi-provisioner-cluster-role-binding.yaml
 - fsx-storage-class.yaml
-# - fsx-claim.yaml # This is a sample claim. If enabled it will create a volume during load
+# - fsx-claim-sample.yaml # This is a sample claim. If enabled it will create a volume during load
 generatorOptions:
   disableNameSuffixHash: true
 images:
