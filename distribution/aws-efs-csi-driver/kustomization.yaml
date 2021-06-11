@@ -6,3 +6,5 @@ resources:
 - csidriver.yaml
 - controller-deployment.yaml
 - controller-serviceaccount.yaml
+- efs-storage-class.yaml
+
