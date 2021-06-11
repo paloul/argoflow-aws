@@ -44,6 +44,7 @@ resources:
 
   ## System
   # - argocd-applications/aws-fsx-csi-driver.yaml
+  - argocd-applications/aws-efs-csi-driver.yaml
   - argocd-applications/aws-node-termination-handler.yaml
   - argocd-applications/cluster-autoscaler.yaml
   - argocd-applications/aws-load-balancer-controller.yaml
