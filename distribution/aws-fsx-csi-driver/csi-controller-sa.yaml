@@ -4,5 +4,5 @@ metadata:
   name: fsx-csi-controller-sa
   namespace: kubeflow
   #Enable if EKS IAM for SA is used
-  annotations:
-    eks.amazonaws.com/role-arn: <<__role_arn.fsx_csi_driver__>>
+  #annotations:
+  #  eks.amazonaws.com/role-arn: <<__role_arn.fsx_csi_driver__>>
