@@ -22,7 +22,7 @@ resources:
   - argocd-applications/central-dashboard.yaml
   - argocd-applications/profile-controller_access-management.yaml
   - argocd-applications/kubeflow-namespace.yaml
-  - argocd-applications/kubeflow-profiles.yaml
+  # - argocd-applications/kubeflow-profiles.yaml
   - argocd-applications/kubeflow-roles.yaml
   # - argocd-applications/pipelines-base.yaml
   - argocd-applications/pipelines-iam-user.yaml
@@ -57,3 +57,6 @@ resources:
   - argocd-applications/mlflow.yaml
   - argocd-applications/experimental-pvcviewer-controller.yaml
   - argocd-applications/experimental-volumes-web-app.yaml
+
+  ## Beyond Limits Babylon Customization 
+  - argocd-applications/ml-group.yaml
