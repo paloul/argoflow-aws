@@ -4,3 +4,7 @@ namespace: kubeflow
 
 resources:
 - github.com/kubeflow/manifests/common/user-namespace/base
+#- cluster-admins.yaml
+
+patchesStrategicMerge:
+- params.env
