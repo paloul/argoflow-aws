@@ -8,8 +8,8 @@ spec:
     name: gpaloulian@beyond.ai
   resourceQuotaSpec:    # resource quota can be set optionally
    hard:
-     cpu: "8"
-     memory: 24Gi
+     cpu: "12"
+     memory: 32Gi
      requests.nvidia.com/gpu: "1"
-     persistentvolumeclaims: "1"
+     persistentvolumeclaims: "2"
      requests.storage: "50Gi"
