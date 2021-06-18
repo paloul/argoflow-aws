@@ -22,7 +22,7 @@ resources:
   - argocd-applications/central-dashboard.yaml
   - argocd-applications/profile-controller_access-management.yaml
   - argocd-applications/kubeflow-namespace.yaml
-  # - argocd-applications/kubeflow-profiles.yaml
+  # - argocd-applications/kubeflow-profiles.yaml # All this does is create a dummy profile
   - argocd-applications/kubeflow-roles.yaml
   # - argocd-applications/pipelines-base.yaml
   - argocd-applications/pipelines-iam-user.yaml
