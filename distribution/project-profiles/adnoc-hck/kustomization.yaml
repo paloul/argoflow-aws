@@ -5,4 +5,4 @@ kind: Kustomization
 
 resources:
 - profile.yaml
-- contributors.yaml
+# - contributors.yaml
