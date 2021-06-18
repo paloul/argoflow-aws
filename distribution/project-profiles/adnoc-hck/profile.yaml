@@ -1,15 +1,15 @@
 apiVersion: kubeflow.org/v1beta1
 kind: Profile
 metadata:
-  name: mlgroup   
+  name: adnoc-hck   
 spec:
   owner:
     kind: User
     name: gpaloulian@beyond.ai
   resourceQuotaSpec:    # resource quota can be set optionally
    hard:
-     cpu: "12"
-     memory: 32Gi
+     cpu: "2"
+     memory: 4Gi
      requests.nvidia.com/gpu: "1"
-     persistentvolumeclaims: "2"
+     persistentvolumeclaims: "1"
      requests.storage: "50Gi"
