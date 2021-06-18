@@ -11,4 +11,4 @@ spec:
       - name: centraldashboard
         env:
         - name: REGISTRATION_FLOW
-          value: "false"
+          value: "true"
