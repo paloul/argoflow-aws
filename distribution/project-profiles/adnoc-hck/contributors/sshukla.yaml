@@ -21,7 +21,7 @@ spec:
   storageClassName: efs-sc
   csi:
     driver: efs.csi.aws.com
-    volumeHandle: fs-4f415248::fsap-0d626f4e7b187f219 # This is the important piece. The same efs vol access point is shared for a project
+    volumeHandle: fs-4f415248::fsap-0a980abfa5232b806 # This is the important piece. The same efs vol access point is shared for a project
 ---
 apiVersion: v1
 kind: PersistentVolumeClaim
