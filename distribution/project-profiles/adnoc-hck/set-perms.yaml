@@ -1,0 +1,60 @@
+apiVersion: kubeflow.org/v1beta1
+kind: Namespace
+metadata:
+  name: adnoc-hck
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: efs-adnoc-hck-pv
+spec:
+  capacity:
+    storage: 5Gi
+  volumeMode: Filesystem
+  accessModes:
+    - ReadWriteMany
+  persistentVolumeReclaimPolicy: Delete
+  storageClassName: efs-sc
+  csi:
+    driver: efs.csi.aws.com
+    volumeHandle: fs-4f415248::fsap-0d626f4e7b187f219 # This is the important piece. The same efs vol access point is shared for a project
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: efs-adnoc-hck
+  namespace: adnoc-hck
+spec:
+  storageClassName: efs-sc
+  accessModes:
+    - ReadWriteMany
+  resources:
+    requests:
+      storage: 5Gi
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: set-permission
+  namespace: adnoc-hck
+spec:
+  template:
+    metadata:
+      annotations:
+        sidecar.istio.io/inject: "false"
+    spec:
+      restartPolicy: Never
+      containers:
+      - name: app
+        image: centos
+        command: ["/bin/sh"]
+        args:
+        - "-c"
+        - "chmod 2775 /data && chown root:users /data"
+        volumeMounts:
+        - name: persistent-storage
+          mountPath: /data
+      volumes:
+      - name: persistent-storage
+        persistentVolumeClaim:
+          claimName: efs-adnoc-hck
