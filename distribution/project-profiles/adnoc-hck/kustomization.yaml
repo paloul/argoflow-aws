@@ -6,3 +6,11 @@ kind: Kustomization
 resources:
 - contributors/gpaloulian.yaml
 - contributors/mshirdel.yaml
+- contributors/ddo.yaml
+- contributors/futthra.yaml
+- contributors/grizzo.yaml
+- contributors/hal-natsheh.yaml
+- contributors/rasadi.yaml
+- contributors/sshukla.yaml
+- contributors/zghazal.yaml
+- contributors/mibrahim.yaml
