@@ -4,6 +4,5 @@ kind: Kustomization
 # This facilitates the creation of a ml-group namespace/profile
 
 resources:
-- profile.yaml
-- persistent-volume.yaml
-# - contributors.yaml
+- contributors/gpaloulian.yaml
+- contributors/mshirdel.yaml
