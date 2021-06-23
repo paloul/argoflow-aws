@@ -64,14 +64,14 @@ data:
         value: '7.5'
         # Factor by with to multiply request to calculate limit
         # if no limit is set, to disable set "none"
-        limitFactor: "none"
+        limitFactor: "1"
         readOnly: false
       memory:
         # Memory for user's Notebook
         value: 14.0Gi
         # Factor by with to multiply request to calculate limit
         # if no limit is set, to disable set "none"
-        limitFactor: "none"
+        limitFactor: "1"
         readOnly: false
       environment:
         value: {}
