@@ -31,10 +31,6 @@ data:
           - public.ecr.aws/j1r0q0g6/notebooks/notebook-servers/jupyter-pytorch-cuda-full:master-1831e436
           - public.ecr.aws/j1r0q0g6/notebooks/notebook-servers/jupyter-tensorflow-full:master-1831e436
           - public.ecr.aws/j1r0q0g6/notebooks/notebook-servers/jupyter-tensorflow-cuda-full:master-1831e436
-          - 527798164940.dkr.ecr.us-west-2.amazonaws.com/tensorflow-1.15.2-notebook-cpu:1.2.0
-          - 527798164940.dkr.ecr.us-west-2.amazonaws.com/tensorflow-1.15.2-notebook-gpu:1.2.0
-          - 527798164940.dkr.ecr.us-west-2.amazonaws.com/tensorflow-2.1.0-notebook-cpu:1.2.0
-          - 527798164940.dkr.ecr.us-west-2.amazonaws.com/tensorflow-2.1.0-notebook-gpu:1.2.0
       imageGroupOne:
         # The container Image for the user's Group One Server
         # The annotation `notebooks.kubeflow.org/http-rewrite-uri: /`
@@ -68,14 +64,14 @@ data:
         value: '7.5'
         # Factor by with to multiply request to calculate limit
         # if no limit is set, to disable set "none"
-        limitFactor: "1"
+        limitFactor: "none"
         readOnly: false
       memory:
         # Memory for user's Notebook
         value: 15.0Gi
         # Factor by with to multiply request to calculate limit
         # if no limit is set, to disable set "none"
-        limitFactor: "1"
+        limitFactor: "none"
         readOnly: false
       environment:
         value: {}
@@ -94,7 +90,7 @@ data:
             # Note that this is a templated value. Special values:
             # {notebook-name}: Replaced with the name of the Notebook. The frontend
             #                  will replace this value as the user types the name
-            value: 'workspace-{notebook-namespace}'
+            value: 'workspace-{notebook-name}'
           size:
             # The Size of the Workspace Volume (in Gi)
             value: '5Gi'
