@@ -61,17 +61,17 @@ data:
         readOnly: false
       cpu:
         # CPU for user's Notebook
-        value: '7.5'
+        value: '7'
         # Factor by with to multiply request to calculate limit
         # if no limit is set, to disable set "none"
-        limitFactor: "1"
+        limitFactor: "1.05"
         readOnly: false
       memory:
         # Memory for user's Notebook
-        value: 14.0Gi
+        value: 12.0Gi
         # Factor by with to multiply request to calculate limit
         # if no limit is set, to disable set "none"
-        limitFactor: "1"
+        limitFactor: "1.05"
         readOnly: false
       environment:
         value: {}
