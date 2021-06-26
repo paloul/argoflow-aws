@@ -92,7 +92,7 @@ data:
             # Note that this is a templated value. Special values:
             # {notebook-name}: Replaced with the name of the Notebook. The frontend
             #                  will replace this value as the user types the name
-            value: 'workspace-{notebook-name}'
+            value: '{notebook-name}'
           size:
             # The Size of the Workspace Volume (in Gi)
             value: '5Gi'
