@@ -1,0 +1,36 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: notebook-template
+data:
+  notebook_template.yaml: | 
+    apiVersion: kubeflow.org/v1beta1
+    kind: Notebook
+    metadata:
+      name: {name}
+      namespace: {namespace}
+      labels:
+        app: {name}
+      annotations:
+        notebooks.kubeflow.org/server-type: ""
+    spec:
+      template:
+        spec:
+          serviceAccountName: {serviceAccount}
+          containers:
+            - name: {name}
+              image: ""
+              volumeMounts: []
+              env: 
+                - name: NAMESPACE
+                  value: {namespace}
+                - name: NOTEBOOK_NAME
+                  value: {name}
+                - name: OAUTH_CALLBACK_URL
+                  value: "https://<<__subdomain_dashboard__>>.<<__domain__>>/notebook/{namespace}/{name}/lab/oauth_callback"
+              resources:
+                requests:
+                  cpu: "0.1"
+                  memory: "0.1Gi"
+          volumes: []
+          tolerations: []

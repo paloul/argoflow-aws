@@ -26,11 +26,12 @@ data:
         value: public.ecr.aws/j1r0q0g6/notebooks/notebook-servers/jupyter-scipy:master-1831e436
         # The list of available standard container Images
         options:
-          - public.ecr.aws/j1r0q0g6/notebooks/notebook-servers/jupyter-scipy:master-1831e436
-          - public.ecr.aws/j1r0q0g6/notebooks/notebook-servers/jupyter-pytorch-full:master-1831e436
-          - public.ecr.aws/j1r0q0g6/notebooks/notebook-servers/jupyter-pytorch-cuda-full:master-1831e436
-          - public.ecr.aws/j1r0q0g6/notebooks/notebook-servers/jupyter-tensorflow-full:master-1831e436
-          - public.ecr.aws/j1r0q0g6/notebooks/notebook-servers/jupyter-tensorflow-cuda-full:master-1831e436
+          # - public.ecr.aws/j1r0q0g6/notebooks/notebook-servers/jupyter-scipy:master-1831e436
+          # - public.ecr.aws/j1r0q0g6/notebooks/notebook-servers/jupyter-pytorch-full:master-1831e436
+          # - public.ecr.aws/j1r0q0g6/notebooks/notebook-servers/jupyter-pytorch-cuda-full:master-1831e436
+          # - public.ecr.aws/j1r0q0g6/notebooks/notebook-servers/jupyter-tensorflow-full:master-1831e436
+          # - public.ecr.aws/j1r0q0g6/notebooks/notebook-servers/jupyter-tensorflow-cuda-full:master-1831e436
+          - public.ecr.aws/s1c3r7u6/beyondai/babylon/jupyter-scipy:1
       imageGroupOne:
         # The container Image for the user's Group One Server
         # The annotation `notebooks.kubeflow.org/http-rewrite-uri: /`
@@ -61,7 +62,7 @@ data:
         readOnly: false
       cpu:
         # CPU for user's Notebook
-        value: '7'
+        value: '7.0'
         # Factor by with to multiply request to calculate limit
         # if no limit is set, to disable set "none"
         limitFactor: "1.05"
