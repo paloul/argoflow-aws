@@ -98,7 +98,7 @@ data:
             value: '5Gi'
           mountPath:
             # The Path that the Workspace Volume will be mounted
-            value: /home/jovyan
+            value: '/home/{notebook-namespace}'
           accessModes:
             # The Access Mode of the Workspace Volume
             # Supported values: 'ReadWriteOnce', 'ReadWriteMany', 'ReadOnlyMany'
@@ -127,7 +127,7 @@ data:
         #       class:
         #         value: standard
         #       mountPath:
-        #         value: /home/jovyan/vol-1
+        #         value: /home/{notebook-namespace}/vol-1
         #       accessModes:
         #         value: ReadWriteOnce
         #       class:
@@ -140,7 +140,7 @@ data:
         #       size:
         #         value: '10Gi'
         #       mountPath:
-        #         value: /home/jovyan/vol-2
+        #         value: /home/{notebook-namespace}/vol-2
         #       accessModes:
         #         value: ReadWriteMany
         #       class:
