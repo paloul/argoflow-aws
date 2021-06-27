@@ -12,6 +12,11 @@ patchesStrategicMerge:
 - deployment.yaml
 
 images:
-- name: public.ecr.aws/j1r0q0g6/notebooks/jupyter-web-app
-  newName: public.ecr.aws/j1r0q0g6/notebooks/jupyter-web-app
+- name: 562046374233.dkr.ecr.us-west-2.amazonaws.com/ai.beyond/babylon/kubeflow/jupyter-web-app
+  newName: 562046374233.dkr.ecr.us-west-2.amazonaws.com/ai.beyond/babylon/kubeflow/jupyter-web-app
   newTag: v1.3.0
+
+#- name: public.ecr.aws/j1r0q0g6/notebooks/jupyter-web-app
+#  newName: public.ecr.aws/j1r0q0g6/notebooks/jupyter-web-app
+#  newTag: v1.3.0
+
