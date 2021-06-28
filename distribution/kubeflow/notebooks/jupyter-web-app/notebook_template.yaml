@@ -20,6 +20,7 @@ data:
           containers:
             - name: {name}
               image: ""
+              imagePullPolicy: Always
               volumeMounts: []
               env: 
                 - name: NAMESPACE
