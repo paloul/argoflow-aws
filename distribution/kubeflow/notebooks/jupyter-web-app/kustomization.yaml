@@ -4,7 +4,8 @@ namespace: kubeflow
 
 resources:
 - notebook_template.yaml
-- github.com/kubeflow/kubeflow/components/crud-web-apps/jupyter/manifests/overlays/istio?ref=0e91a2b9cd0c3b6687692b1f1f09ac6070cc6c3e # tag=v1.3.0
+#- github.com/kubeflow/kubeflow/components/crud-web-apps/jupyter/manifests/overlays/istio?ref=0e91a2b9cd0c3b6687692b1f1f09ac6070cc6c3e # tag=v1.3.0
+- github.com/paloul/argoflow-kubeflow/components/crud-web-apps/jupyter/manifests/overlays/istio?ref=aibeyond-jupyterwebapp-customization
 
 patchesStrategicMerge:
 - spawner_ui_config.yaml

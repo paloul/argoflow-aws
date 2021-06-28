@@ -13,6 +13,7 @@ spec:
       - name: jupyter-web-app
         #image: public.ecr.aws/j1r0q0g6/notebooks/jupyter-web-app
         image: 562046374233.dkr.ecr.us-west-2.amazonaws.com/ai.beyond/babylon/kubeflow/jupyter-web-app
+        imagePullPolicy: Always
         ports:
         - containerPort: 5000
         volumeMounts:
