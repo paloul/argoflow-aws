@@ -108,7 +108,7 @@ data:
             # {none}: default StorageClass
             # {empty}: empty string ""
             value: 'efs-sc'
-        readOnly: true
+        readOnly: false
       dataVolumes:
         # List of additional Data Volumes to be attached to the user's Notebook
         value: []
