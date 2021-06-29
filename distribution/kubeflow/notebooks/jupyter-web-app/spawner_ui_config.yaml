@@ -59,7 +59,7 @@ data:
       # If false, users can only select from the images in this config
       imagePullPolicy:
         # Supported values: Always, IfNotPresent, Never
-        value: IfNotPresent
+        value: Always
         readOnly: false
       cpu:
         # CPU for user's Notebook
