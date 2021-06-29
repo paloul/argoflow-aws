@@ -26,7 +26,7 @@ data:
                 - name: NB_USER
                   value: {namespace}
                 - name: NB_UID
-                  value: 1001
+                  value: "1001"
                 - name: NB_NAME
                   value: {name}
               resources:
