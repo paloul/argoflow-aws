@@ -107,7 +107,7 @@ data:
             # The StrageClass the PVC will use if type is New. Special values are:
             # {none}: default StorageClass
             # {empty}: empty string ""
-            value: 'efs-sc'
+            value: efs-sc
         readOnly: false
       dataVolumes:
         # List of additional Data Volumes to be attached to the user's Notebook
