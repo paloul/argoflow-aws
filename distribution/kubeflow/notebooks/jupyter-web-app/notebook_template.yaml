@@ -23,9 +23,11 @@ data:
               imagePullPolicy: Always
               volumeMounts: []
               env: 
-                - name: NAMESPACE
+                - name: NB_USER
                   value: {namespace}
-                - name: NOTEBOOK_NAME
+                - name: NB_UID
+                  value: "1001"
+                - name: NB_NAME
                   value: {name}
               resources:
                 requests:
