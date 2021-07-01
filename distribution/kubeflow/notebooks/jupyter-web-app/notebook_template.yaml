@@ -20,14 +20,15 @@ data:
           containers:
             - name: {name}
               image: ""
+              imagePullPolicy: Always
               volumeMounts: []
               env: 
-                - name: NAMESPACE
+                - name: NB_USER
                   value: {namespace}
-                - name: NOTEBOOK_NAME
+                - name: NB_UID
+                  value: "1001"
+                - name: NB_NAME
                   value: {name}
-                - name: OAUTH_CALLBACK_URL
-                  value: "https://<<__subdomain_dashboard__>>.<<__domain__>>/notebook/{namespace}/{name}/lab/oauth_callback"
               resources:
                 requests:
                   cpu: "0.1"

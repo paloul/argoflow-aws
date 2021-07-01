@@ -59,7 +59,7 @@ data:
       # If false, users can only select from the images in this config
       imagePullPolicy:
         # Supported values: Always, IfNotPresent, Never
-        value: IfNotPresent
+        value: Always
         readOnly: false
       cpu:
         # CPU for user's Notebook
@@ -107,7 +107,7 @@ data:
             # The StrageClass the PVC will use if type is New. Special values are:
             # {none}: default StorageClass
             # {empty}: empty string ""
-            value: '{none}'
+            value: {none}
         readOnly: false
       dataVolumes:
         # List of additional Data Volumes to be attached to the user's Notebook
