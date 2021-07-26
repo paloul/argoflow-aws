@@ -5,4 +5,4 @@ metadata:
   namespace: kubeflow
   #Enable if EKS IAM for SA is used
   annotations:
-    eks.amazonaws.com/role-arn: <<__role_arn.fsx_csi_driver__>>
+    eks.amazonaws.com/role-arn: arn:aws:iam::562046374233:role/eksctl-babylon-2-addon-iamserviceaccount-kub-Role1-437W9YQEJWD1

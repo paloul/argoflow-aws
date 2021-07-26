@@ -12,15 +12,15 @@ spec:
     helm:
       parameters:
         - name: serviceAccount.annotations.eks\.amazonaws\.com/role-arn
-          value: <<__role_arn.loadbalancer_controller__>>
+          value: arn:aws:iam::562046374233:role/eksctl-babylon-2-addon-iamserviceaccount-kub-Role1-1MK5BN16DVE9Q
         - name: clusterName
-          value: <<__cluster_name__>>
+          value: babylon-2
         - name: image.repository
           value: amazon/aws-alb-ingress-controller
         - name: vpcId
-          value: <<__vpc_id__>>
+          value: vpc-07a46a4013072763d
         - name: region
-          value: <<__aws_region__>>
+          value: us-west-2
         - name: serviceAccount.create
           value: "true"
         - name: rbac.create

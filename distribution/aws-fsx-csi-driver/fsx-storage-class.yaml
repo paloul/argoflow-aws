@@ -6,12 +6,12 @@ provisioner: fsx.csi.aws.com
 mountOptions:
   - flock
 parameters:
-  subnetId: <<__fsx_lustre.subnet_id__>>
-  securityGroupIds: <<__fsx_lustre.security_group_id__>>
-  deploymentType: <<__fsx_lustre.deployment_type__>>
-  storageType: <<__fsx_lustre.storage_type__>>
-  perUnitStorageThroughput: "<<__fsx_lustre.storage_throughput__>>"
-  driveCacheType: <<__fsx_lustre.drive_cache_type__>>
+  subnetId: subnet-00e3183a68fafb98c
+  securityGroupIds: sg-0a90ed5af0bee2189,sg-0b8ef19466313b1da
+  deploymentType: PERSISTENT_1
+  storageType: HDD
+  perUnitStorageThroughput: "40"
+  driveCacheType: READ
   automaticBackupRetentionDays: "1"
   dailyAutomaticBackupStartTime: "00:00"
   copyTagsToBackups: "true"

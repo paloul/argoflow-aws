@@ -7,7 +7,7 @@ spec:
   gateways:
   - mlflow-gateway
   hosts:
-  - <<__subdomain_mlflow__>>.<<__domain__>>
+  - mlflow.babylon2.beyond.ai
   http:
   - route:
     - destination:

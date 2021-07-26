@@ -9,7 +9,7 @@ spec:
   storageClassName: fsx
   resources:
     requests:
-      storage: <<__fsx_lustre.storage_request__>>
+      storage: 1800Gi
 # Update spec.resource.requests.storage with the storage capacity to request. 
 # The storage capacity value will be rounded up to 1200 GiB, 2400 GiB, or a multiple of 3600 GiB for SSD. 
 # If the storageType is specified as HDD, the storage capacity will be rounded up to 6000 GiB or a multiple 

@@ -16,7 +16,7 @@ patchesStrategicMerge:
 - removals/mysql-resources.yaml
  
 # commonAnnotations:
-#   eks.amazonaws.com/role-arn: <<__role_arn.pipelines__>>
+#   eks.amazonaws.com/role-arn: arn:aws:iam::123456789012:role/my-cluster_kubeflow_pipelines
 
 images:
 - name: gcr.io/ml-pipeline/cache-deployer

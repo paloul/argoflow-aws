@@ -5,6 +5,6 @@ metadata:
 provisioner: efs.csi.aws.com
 parameters:
   provisioningMode: efs-ap
-  fileSystemId: <<__efs.file_system_id>>
+  fileSystemId: fs-4f415248
   directoryPerms: "2755"
   basePath: "/dynamic_volumes"

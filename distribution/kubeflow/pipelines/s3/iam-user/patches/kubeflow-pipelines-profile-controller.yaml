@@ -14,8 +14,8 @@ spec:
         command: ["python", "/hooks/sync_with_s3.py"]
         env:
           - name: SECRET_NAME_S3_ACCESSKEY
-            value: <<__external_secret_name.kubeflow.s3_accesskey__>>
+            value: dev/babylon-2/kf-s3-accesskey
           - name: SECRET_NAME_S3_SECRETKEY
-            value: <<__external_secret_name.kubeflow.s3_secretkey__>>            
+            value: dev/babylon-2/kf-s3-secretkey            
           - name: EXTERNAL_SECRET_ROLE_ARN
-            value: <<__role_arn.external_secrets.kubeflow__>>
+            value: arn:aws:iam::562046374233:role/eksctl-babylon-2-addon-iamserviceaccount-kub-Role1-1804OCMGQ1FFQ
