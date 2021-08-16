@@ -17,7 +17,6 @@ resources:
   # - argocd-applications/oidc-auth-on-cluster-keycloak.yaml
   - argocd-applications/oidc-auth-external.yaml
 
-
   ## Kubeflow  
   - argocd-applications/central-dashboard.yaml
   - argocd-applications/profile-controller_access-management.yaml
@@ -59,4 +58,4 @@ resources:
   # - argocd-applications/experimental-volumes-web-app.yaml
 
   ## Beyond Limits Babylon Customization 
-  - argocd-applications/project-profiles/adnoc-hck.yaml
+  # - argocd-applications/project-profiles/adnoc-hck.yaml # Project is not live as of August 2021

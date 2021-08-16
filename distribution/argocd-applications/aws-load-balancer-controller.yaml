@@ -6,6 +6,9 @@ metadata:
 spec:
   project: default
   source:
+
+    # https://artifacthub.io/packages/helm/aws/aws-load-balancer-controller/1.2.0
+
     repoURL: https://aws.github.io/eks-charts
     targetRevision: 1.2.0
     chart: aws-load-balancer-controller
