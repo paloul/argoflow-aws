@@ -59,4 +59,4 @@ resources:
   # - argocd-applications/experimental-volumes-web-app.yaml
 
   ## Beyond Limits Babylon Customization 
-  - argocd-applications/project-profiles/adnoc-hck.yaml
+  # - argocd-applications/project-profiles/adnoc-hck.yaml # Project is not live as of August 2021
